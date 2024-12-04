@@ -1,0 +1,222 @@
+body {
+  background-color: #f4f4f4;
+  font-family: "Poppins", sans-serif;
+}
+
+h2,
+h1 {
+  color: #b8860b;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-weight: bold;
+}
+
+/* Navbar */
+.navbar {
+  transition: box-shadow 0.3s ease;
+}
+
+.navbar-nav .nav-link {
+  color: #b8860b;
+  font-weight: normal;
+}
+.nav-item {
+  color: #b8860b;
+}
+.nav-link:hover {
+  color: black;
+}
+.navbar-brand {
+  color: #b8860b;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.navbar-brand:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/* carousel */
+#heroCarousel .carousel-item {
+  height: 85vh;
+}
+
+#heroCarousel img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.carousel-caption h5 {
+  font-size: 2.5rem;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  margin-bottom: 10px;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-weight: 400;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* tentang */
+#tentang img {
+  max-width: 80%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.menu-card {
+  transition: transform 0.3s;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.menu-card:hover {
+  transform: scale(1.05);
+}
+
+/* lokasi */
+.lokasi {
+  background-color: white;
+  border: 2px solid #4a2c2a;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  /* Navbar */
+  .navbar {
+    padding: 15px 0;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  /* Section Tentang */
+  #tentang img {
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* Menu */
+  #menu .col-md-3 {
+    flex: 0 0 45%;
+    margin: 10px;
+  }
+
+  /*Galeri */
+  #galeri .col-md-3 {
+    flex: 0 0 45%;
+    margin: 10px;
+  }
+
+  /* Section Lokasi */
+  #lokasi .col-md-6 {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 20px 0;
+    text-align: center;
+  }
+}
+
+/*tampilan hp */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  /* Navbar */
+  .navbar {
+    padding: 10px 0;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px 15px;
+    text-align: center;
+  }
+  /* carusel */
+  #heroCarousel .carousel-item {
+    height: 40vh;
+  }
+
+  .carousel-caption h5 {
+    font-size: 15px;
+  }
+
+  .carousel-caption p {
+    font-size: 13px;
+  }
+
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+  }
+  /* Tentang */
+  #tentang img {
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* Menu */
+  #menu .col-md-4 {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Galeri */
+  #galeri .col-md-4 {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Lokasi */
+  #lokasi .col-md-6 {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 20px 0;
+    text-align: center;
+  }
+}
